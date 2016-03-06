@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: src
+# key: src
+# binding: direct-keybinding
+# --
+#+BEGIN_SRC ${1:java}
+  $0
+#+END_SRC
