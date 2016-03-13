@@ -3,6 +3,9 @@
 ;;增量选择功能
 (define-key global-map "\M-s" 'er/expand-region)
 
+;;重命名文件名
+(global-set-key (kbd "S-<f6>") 'dired-do-rename) 
+
 ;;删除选择的内容
 (delete-selection-mode 1)
 
