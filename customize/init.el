@@ -22,3 +22,6 @@
 ;;设置multiple-occure
 (add-to-list 'load-path (concat user-customize-directory "multiple-cursors.el"))
 (require 'multiple-cursors)
+
+;;自定义stateBar 时间显示
+(require 'customize-time)
