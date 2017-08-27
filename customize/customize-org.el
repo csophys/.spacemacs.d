@@ -3,7 +3,8 @@
 (define-key global-map "\C-ca" 'org-agenda)
 
 (when *is-a-mac*
-  (setq capturePath "~/快盘/document/Dropbox/agenda")
+ ;(setq capturePath "~/快盘/document/Dropbox/agenda")
+  (setq capturePath "~/Library/Mobile Documents/com~apple~CloudDocs/document/agenda")
   (setq org-default-task-file (concat capturePath "/gtd.org"))
   (setq org-work-task-file (concat capturePath "/workGTD.org"))
   (setq org-default-capture-file (concat capturePath "/capture.org"))
@@ -21,7 +22,7 @@
         ("c" "Capture" entry (file+datetree org-default-capture-file)
          "* %?\nEntered on %U\n  %i\n")
         ("w" "WorkDone" entry (file+datetree org-work-task-file)
-         "* %?\nEntered on %U\n  %i\n")
+         "* TODO %?\nEntered on %U\n  %i\n")
         ))
 
 ;;发布org

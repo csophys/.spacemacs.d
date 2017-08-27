@@ -263,7 +263,7 @@ layers configuration. You are free to put any user code."
     ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "b7b2cd8c45e18e28a14145573e84320795f5385895132a646ff779a141bbda7e" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
  '(org-agenda-files
    (quote
-    ("~/快盘/document/Dropbox/agenda/gtd.org" "~/快盘/document/Dropbox/agenda/workGTD.org"))))
+    ("~/Library/Mobile Documents/com~apple~CloudDocs/document/agenda/gtd.org" "~/Library/Mobile Documents/com~apple~CloudDocs/document/agenda/workGTD.org" "~/快盘/document/Dropbox/agenda/workGTD.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
