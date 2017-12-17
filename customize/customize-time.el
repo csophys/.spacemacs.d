@@ -8,7 +8,7 @@
 ;;时间的变化频率
 (setq display-time-interval 10)
 ;;显示时间的格式
-(setq display-time-format "%H:%M")
+(setq display-time-formatk "%H:%M")
 
 (provide 'customize-time)
 
