@@ -21,7 +21,12 @@
 
 ;;设置multiple-occure
 (add-to-list 'load-path (concat user-customize-directory "multiple-cursors.el"))
+;;加载cnblogs 博客发布
+(add-to-list 'load-path (concat user-customize-directory "cnblogs"))
 (require 'multiple-cursors)
 
 ;;自定义stateBar 时间显示
 (require 'customize-time)
+
+;;引入cnblogs
+(require 'customize-cnblogs)
