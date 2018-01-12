@@ -22,7 +22,7 @@
         ("c" "Capture" entry (file+datetree org-default-capture-file)
          "* %?\nEntered on %U\n  %i\n")
         ("w" "WorkDone" entry (file+datetree org-work-task-file)
-         "* TODO %?\nEntered on %U\n  %i\n")
+         "* %?\nEntered on %U\n  %i\n")
         ))
 
 ;;发布org
