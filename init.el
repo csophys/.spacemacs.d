@@ -263,13 +263,13 @@ layers configuration. You are free to put any user code."
  '(cnblogs-blog-id "csophys")
  '(cnblogs-server-url "http://www.cnblogs.com/csophys/services/metaweblog.aspx")
  '(cnblogs-user-name "csophys")
- '(cnblogs-user-passwd "2038100")
+ '(cnblogs-user-passwd "qaz2038100")
  '(custom-safe-themes
    (quote
     ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "b7b2cd8c45e18e28a14145573e84320795f5385895132a646ff779a141bbda7e" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
  '(org-agenda-files
    (quote
-    ("~/Library/Mobile Documents/com~apple~CloudDocs/document/agenda/gtd20170311.org" "~/Library/Mobile Documents/com~apple~CloudDocs/document/agenda/workGTD.org" "~/Library/Mobile Documents/com~apple~CloudDocs/document/agenda/gtd.org"))))
+    ("~/Library/Mobile Documents/com~apple~CloudDocs/document/agenda/workGTD.org" "~/Library/Mobile Documents/com~apple~CloudDocs/document/agenda/gtd.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -277,5 +277,3 @@ layers configuration. You are free to put any user code."
  ;; If there is more than one, they won't work right.
  '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
  '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
-
-

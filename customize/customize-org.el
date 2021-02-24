@@ -2,6 +2,8 @@
 ;;global keys for agenda things
 (define-key global-map "\C-ca" 'org-agenda)
 
+(setq org-export-backends (quote (ascii html icalendar latex md)))
+
 (when *is-a-mac*
                                         ;(setq capturePath "~/快盘/document/Dropbox/agenda")
   (setq capturePath "~/Library/Mobile Documents/com~apple~CloudDocs/document/agenda")
@@ -27,21 +29,22 @@
 
 ;;发布org
 (require 'ox-publish)
+
 (setq org-publish-project-alist
       '(
         ("org-notes"
-         :base-directory "/Users/csophys/微云同步盘/document/Dropbox/blog/blogSite/src"
+         :base-directory "/Users/csophys/Library/Mobile Documents/com~apple~CloudDocs/职业能力提升/知识传播/blogSite/src"
          :base-extension "org"
-         :publishing-directory "/Users/csophys/微云同步盘/document/Dropbox/blog/blogSite"
+         :publishing-directory "/Users/csophys/Library/Mobile Documents/com~apple~CloudDocs/职业能力提升/知识传播/blogSite"
          :recursive t
          :publishing-function org-html-publish-to-html
          :headline-levels 4             ; Just the default for this project.
          :auto-preamble t
          )
         ("org-static"
-         :base-directory "/Users/csophys/微云同步盘/document/Dropbox/blog/blogSite/src"
+         :base-directory "/Users/csophys/Library/Mobile Documents/com~apple~CloudDocs/职业能力提升/知识传播/blogSite/src" 
          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-         :publishing-directory "/Users/csophys/微云同步盘/document/Dropbox/blog/blogSite/"
+         :publishing-directory "/Users/csophys/Library/Mobile Documents/com~apple~CloudDocs/职业能力提升/知识传播/blogSite"
          :recursive t
          :publishing-function org-publish-attachment
          )
@@ -67,6 +70,8 @@ background of code to whatever theme I'm using's background"
 (setq org-todo-keywords
       '((sequence "TODO" "DOING"  "|" "DONE" "STOP" )))
 
+(setq org-image-actual-width '(300))
+(setq org-image-actual-width 300)
 
 (provide 'customize-org)
 
