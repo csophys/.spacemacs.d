@@ -1,6 +1,8 @@
 ;;customize-org
 ;;global keys for agenda things
 (define-key global-map "\C-ca" 'org-agenda)
+;;设置查询当前笔记的快捷搜索快捷键
+(define-key global-map "\C-cs" 'helm-org-rifle-agenda-files)
 
 (setq org-export-backends (quote (ascii html icalendar latex md)))
 
@@ -70,8 +72,15 @@ background of code to whatever theme I'm using's background"
 (setq org-todo-keywords
       '((sequence "TODO" "DOING"  "|" "DONE" "STOP" )))
 
-(setq org-image-actual-width '(300))
-(setq org-image-actual-width 300)
+;;增加日历TODO提醒功能
+(setq appt-display-format 'window)
+(setq appt-message-warninig-time '10)
+(setq appt-display-duration '30)
+(setq appt-display-mode-lint t)
+(org-agenda-to-appt)
+
+;;设置org-download的图片文件地址
+(setq-default org-download-image-dir "./img")
 
 (provide 'customize-org)
 

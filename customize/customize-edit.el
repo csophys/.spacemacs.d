@@ -1,5 +1,4 @@
 ;;提供基本的文件浏览功能
-
 ;;增量选择功能
 (define-key global-map "\M-s" 'er/expand-region)
 
@@ -11,12 +10,14 @@
 
 
 ;;ace-jump
+;;启用中文的搜索
+(ace-pinyin-global-mode t)
 (define-key global-map "\M-j" 'avy-goto-char)
 ;;occur 绑定
 (define-key global-map "\M-o" 'occur)
 
+;;(global-set-key (kbd "C-<f12>") 'magit-status)
 ;;shell绑定
-(global-set-key (kbd "C-<f12>") 'magit-status)
 (global-set-key (kbd "M-<f12>") 'shell)
 
 ;字体变化
@@ -32,7 +33,6 @@
 
 
 ;;复制当前行
-
 (defun duplicate-current-line (&optional n)
   "duplicate current line, make more than 1 copy given a numeric argument"
   (interactive "p")
@@ -47,8 +47,6 @@
       (while (> n 0)
         (insert current-line)
         (decf n)))))
-
-(global-set-key "\C-c\C-w" 'duplicate-current-line)
 
 
 (provide 'customize-edit)
