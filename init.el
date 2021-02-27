@@ -312,6 +312,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
     '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
       ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
       ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
+;;移除cl deprecated的警告
+(setq byte-compile-warnings '(cl-functions))
+
   )
 
 (defun dotspacemacs/user-config ()
