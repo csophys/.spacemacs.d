@@ -20,11 +20,11 @@
 (require 'customize-edit)
 
 ;;加载cnblogs 博客发布，暂时放弃在博客园发布博文。
-;;(add-to-list 'load-path (concat user-customize-directory "cnblogs"))
+(add-to-list 'load-path (concat user-customize-directory "cnblogs"))
 (require 'multiple-cursors)
 
 ;;自定义stateBar 时间显示
 (require 'customize-time)
 
 ;;引入cnblogs
-;;(require 'customize-cnblogs)
+(require 'customize-cnblogs)

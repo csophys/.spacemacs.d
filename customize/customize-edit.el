@@ -74,8 +74,9 @@
   ;; enable the /inline english/ mode for all buffers
   (sis-global-inline-mode t)
 
-  (setq sis-do-set (lambda(source) (start-process "set-input-source" nil "macism" source "50000"))
-	      sis-other-cursor-color "red" ; 中文光标色
-        )
+  (setq
+   ;;sis-do-set (lambda(source) (start-process "set-input-source" nil "macism" source "50000"))
+	 sis-other-cursor-color "#7bb8ea" ; 中文光标色,浅蓝色。
+       )
   )
 (provide 'customize-edit)
