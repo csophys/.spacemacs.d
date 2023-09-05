@@ -35,6 +35,8 @@
 
 ;;光标定位下一个和当前选中区域一样的文本
 (global-set-key (kbd "M-g") 'mc/mark-next-like-this)
+(global-set-key (kbd "M-N") 'mc/mark-next-like-this)
+
 
 
 (provide 'customize-keys)
