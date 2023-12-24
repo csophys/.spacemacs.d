@@ -1,6 +1,9 @@
 ;;删除选择的内容
 (delete-selection-mode 1)
 
+;;全局打开行号显示
+(global-linum-mode t)
+
 ;; overriding image.el function image-type-available-p
 (defun image-type-available-p (type)
   "Return t if image type TYPE is available.
